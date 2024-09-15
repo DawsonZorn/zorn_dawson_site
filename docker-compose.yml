@@ -1,0 +1,11 @@
+version: '3'
+services:
+  web:
+    container_name: zorn_dawson_coding_assignment11
+    build: .
+    ports:
+      - "7775:3000"
+    volumes:
+      - .:/zorn_dawson_site
+    stdin_open: true
+    tty: true
